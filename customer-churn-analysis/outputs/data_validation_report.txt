@@ -1,0 +1,67 @@
+Raw shape: 7043 rows x 21 columns
+
+[1] Data types (raw)
+customerID              str
+gender                  str
+SeniorCitizen         int64
+Partner                 str
+Dependents              str
+tenure                int64
+PhoneService            str
+MultipleLines           str
+InternetService         str
+OnlineSecurity          str
+OnlineBackup            str
+DeviceProtection        str
+TechSupport             str
+StreamingTV             str
+StreamingMovies         str
+Contract                str
+PaperlessBilling        str
+PaymentMethod           str
+MonthlyCharges      float64
+TotalCharges            str
+Churn                   str
+
+[2] Missing values
+NaN per column: none
+Blank-string values per column:
+TotalCharges    11
+
+TotalCharges blank/non-numeric rows: 11
+  tenure of those rows: [np.int64(0)] (brand-new customers, not yet billed)
+  Set to 0.0 because tenure = 0. Remaining NaN: 0
+
+[3] Duplicates
+Duplicate rows: 0
+Duplicate customerIDs: 0
+
+[4] Invalid value checks
+tenure < 0: 0
+MonthlyCharges <= 0: 0
+TotalCharges < 0: 0
+SeniorCitizen not in {0,1}: 0
+Churn not in {Yes,No}: 0
+Categorical value sets:
+  gender: ['Female', 'Male']
+  Partner: ['No', 'Yes']
+  Dependents: ['No', 'Yes']
+  PhoneService: ['No', 'Yes']
+  MultipleLines: ['No', 'No phone service', 'Yes']
+  InternetService: ['DSL', 'Fiber optic', 'No']
+  OnlineSecurity: ['No', 'No internet service', 'Yes']
+  OnlineBackup: ['No', 'No internet service', 'Yes']
+  DeviceProtection: ['No', 'No internet service', 'Yes']
+  TechSupport: ['No', 'No internet service', 'Yes']
+  StreamingTV: ['No', 'No internet service', 'Yes']
+  StreamingMovies: ['No', 'No internet service', 'Yes']
+  Contract: ['Month-to-month', 'One year', 'Two year']
+  PaperlessBilling: ['No', 'Yes']
+  PaymentMethod: ['Bank transfer (automatic)', 'Credit card (automatic)', 'Electronic check', 'Mailed check']
+  Churn: ['No', 'Yes']
+Internet add-on inconsistencies (InternetService = No): 0
+TotalCharges / (tenure x MonthlyCharges): median 1.00, min 0.69, max 1.57
+
+[5] Added columns: ChurnFlag, TenureGroup, MonthlyChargesBand; SeniorCitizen recoded 0/1 -> No/Yes
+
+Saved: data/processed/telco_churn_clean.csv (7043 rows x 24 cols)

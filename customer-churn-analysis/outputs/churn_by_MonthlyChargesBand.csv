@@ -1,0 +1,5 @@
+segment,dimension,customers,churned,churn_rate_pct,share_of_customers_pct,share_of_all_churn_pct,lift_vs_overall
+$35-70,MonthlyChargesBand,1725,413,23.94,24.49,22.1,0.9
+$70-90,MonthlyChargesBand,1844,697,37.8,26.18,37.29,1.42
+<=$35,MonthlyChargesBand,1735,189,10.89,24.63,10.11,0.41
+>$90,MonthlyChargesBand,1739,570,32.78,24.69,30.5,1.24

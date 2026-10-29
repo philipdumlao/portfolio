@@ -1,0 +1,5 @@
+segment,dimension,customers,churned,churn_rate_pct,share_of_customers_pct,share_of_all_churn_pct,lift_vs_overall
+Bank transfer (automatic),PaymentMethod,1544,258,16.71,21.92,13.8,0.63
+Credit card (automatic),PaymentMethod,1522,232,15.24,21.61,12.41,0.57
+Electronic check,PaymentMethod,2365,1071,45.29,33.58,57.3,1.71
+Mailed check,PaymentMethod,1612,308,19.11,22.89,16.48,0.72

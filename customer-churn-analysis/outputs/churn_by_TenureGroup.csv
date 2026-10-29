@@ -1,0 +1,5 @@
+segment,dimension,customers,churned,churn_rate_pct,share_of_customers_pct,share_of_all_churn_pct,lift_vs_overall
+0-12 months,TenureGroup,2186,1037,47.44,31.04,55.48,1.79
+13-24 months,TenureGroup,1024,294,28.71,14.54,15.73,1.08
+25-48 months,TenureGroup,1594,325,20.39,22.63,17.39,0.77
+49-72 months,TenureGroup,2239,213,9.51,31.79,11.4,0.36
